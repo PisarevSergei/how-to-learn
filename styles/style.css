@@ -66,6 +66,7 @@ width: 765px;
 height: 608px;
 z-index: 1;
 }
+
 .header__square-pic {
 position: absolute;
 top: 64px;
@@ -164,7 +165,7 @@ flex-wrap: wrap;
 
 .table__cell {
 margin-top: 60px;
-width: 250px ;
+width: 250px;
 }
 
 .table__heading {
@@ -270,7 +271,7 @@ font-weight: normal;
 }
 
 .table__cell_theme_dark {
-  width: 200px ;
+  width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
