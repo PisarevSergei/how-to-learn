@@ -26,15 +26,19 @@
   font-size: 102px;
   font-weight: bold;
   margin-left: 64px;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 183px;
+}
+
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
 }
 
@@ -42,7 +46,8 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -60,6 +65,8 @@ right: 0;
 width: 765px;
 height: 608px;
 z-index: 1;
+object-fit: cover;
+object-position: center;
 }
 
 .header__square-pic {
@@ -80,12 +87,13 @@ justify-content: center;
 display: flex;
 justify-content: space-between;
 margin-top: 100px;
-margin-bottom: 100px;
+margin-bottom: 0;
 width: 80%;
 }
 
 .two-columns__brief {
-width: 175px;
+max-width: 175px;
+width: 100%;
 line-height: 1.2;
 font-size: 18px;
 font-weight: normal;
@@ -182,19 +190,23 @@ font-weight: normal;
 .feynman {
   display: flex;
   flex-direction: column;
-  height: 790px;
+  min-height: 790px;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
+  margin: 0 auto;
 margin-top: 100px;
 margin-bottom: 0;
-width: 648px;
+max-width: 648px;
+width: 100%;
 z-index: 1;
 align-self: center;
 line-height: 1.15;
 font-size: 120px;
 font-weight: bold;
+text-align: center;
 }
 
 .feynman__subtitle {
@@ -369,6 +381,5 @@ font-weight: normal;
 }
 
 .logo_place_footer {
-width: 183px;
 height: 35px;
 }
