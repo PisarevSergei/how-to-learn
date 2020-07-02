@@ -1,4 +1,4 @@
-@import url(../section-title/_theme/section-title_theme_dark.css);
+@import url(_theme/section-title_theme_dark.css);
 
 .section-title {
   margin: 0 auto;
@@ -9,4 +9,5 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  z-index: 5;
 }
